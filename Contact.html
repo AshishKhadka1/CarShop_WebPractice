@@ -5,10 +5,12 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.boothstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
     section {
       padding: 12px;
+      padding-bottom: 23%;
     }
 
     main {
@@ -17,9 +19,71 @@
       gap: 20px;
       height: 130px;
       justify-content: center;
-    
+
     }
-   
+
+    .topnav {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .topnav i {
+      position: absolute;
+      top: 1.2rem;
+      left: 1rem;
+    }
+    
+
+    .topnav input[type=text] {
+      padding: 8px 8px 8px 2.5rem;
+      margin-top: 8px;
+      border: none;
+      font-size: 18px;
+      border: 1px solid #c7c7c7;
+    }
+
+    .link .fa {
+      padding: 12px;
+      font-size: 30px;
+      width: 30px;
+      text-align: left;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+      transition: .5s;
+      cursor: pointer;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+      transform: translateY(-7px);
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+    .end{
+      text-align: center;
+    }
+    .link{
+      text-align: left;
+    }
   </style>
 
 </head>
@@ -40,62 +104,73 @@
   </header>
 
   <section>
-    <p>let's talk</p>
-    <h2>Contact Us</h2>
-    <p>if you want to reserve a cars, feel free to contact us and we will attend to you as soon as possibe</p>
-
-
-
-
-    <p>Email: info@carshop.com</p>
-    <p>Phone: 123-456-7890</p>
+    <h2>XCar Shop</h2>
+    <p>Have a question? whatever you need, we're here to help.
+    </p>
+    <div class="topnav">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search....">
+    </div>
   </section>
 
-  <div class="down">
-    <main>
-      <div>
-        <dl>
-          <dt>
-            <h3>Services</h3>
-          </dt>
-          <dt>Delivery</dt>
-          <dt>Latest cars</dt>
-          <dt>Pre-order now</dt>
-        </dl>
+
+
+
+  <footer>
+    <div class="link">
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <div class="">
+      <!-- Remaining here -->
+      <main>
+        <div>
+          <dl>
+            <dt>
+              <h3>Services</h3>
+            </dt>
+            <dt>Delivery</dt>
+            <dt>Latest cars</dt>
+            <dt>Pre-order now</dt>
+          </dl>
+        </div>
+
+
+        <div>
+          <dl>
+            <h3>
+              <dt>Information</dt>
+            </h3>
+            <dt>Latest news</dt>
+            <dt>Privacy policy</dt>
+            <dt>Terms of services</dt>
+          </dl>
+        </div>
+
+        <div>
+          <dl>
+            <h3>
+              <dt>Address</dt>
+            </h3>
+            <i class="fa-solid fa-location-dot"></i>
+            <i>Itahari - Nepal</i>
+            <dt>+977 9846837533</dt>
+            <dt>info@xcarshop.com</dt>
+          </dl>
+        </div>
+      </main>
+      <div class="end">
+        <p>&copy; 2023 Car Shop. All rights reserved.</p>
       </div>
+      
 
-
-      <div>
-        <dl>
-          <h3>
-            <dt>Information</dt>
-          </h3>
-          <dt>Latest news</dt>
-          <dt>Privacy policy</dt>
-          <dt>Terms of services</dt>
-        </dl>
-      </div>
-
-      <div>
-        <dl>
-          <h3>
-            <dt>Address</dt>
-          </h3>
-          <dt>Itahari - Nepal</dt>
-          <dt>+977 9846837533</dt>
-          <dt>info@xcarshop.com</dt>
-        </dl>
-      </div>
-    </main>
-
-    <footer>
-      <p>&copy; 2023 Car Shop. All rights reserved.</p>
-
-    </footer>
+  </footer>
 
   </div>
 
-
+  <script src="https://kit.fontawesome.com/cecde9af7c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

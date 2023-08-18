@@ -11,11 +11,15 @@ header {
   height: 65px;
 }
 
-
 .x-style{
   height: 24px;
   width: 24px;
+  filter:invert(1);
+  margin-top:25px;
+  
+
 }
+
 
 header h1 {
   margin: 10px;
