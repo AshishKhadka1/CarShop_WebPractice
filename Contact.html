@@ -10,15 +10,15 @@
   <style>
     section {
       padding: 12px;
-      padding-bottom: 23%;
+
     }
 
     main {
-      position: relative;
+      position:relative;
       display: flex;
-      gap: 20px;
+      gap: 100px;
       height: 130px;
-      justify-content: center;
+      justify-content:space-evenly;
 
     }
 
@@ -46,44 +46,97 @@
       padding: 12px;
       font-size: 30px;
       width: 30px;
-      text-align: left;
+   
       text-decoration: none;
       margin: 5px 2px;
       border-radius: 50%;
       transition: .5s;
       cursor: pointer;
+      
+  
     }
 
     .fa:hover {
       opacity: 0.7;
       transform: translateY(-7px);
     }
-
-    .fa-facebook {
-      background: #3B5998;
-      color: white;
-    }
-
-    .fa-twitter {
-      background: #55ACEE;
-      color: white;
-    }
-
-    .fa-instagram {
-      background: #125688;
-      color: white;
-    }
-
-    .fa-linkedin {
-      background: #007bb5;
-      color: white;
-    }
-    .end{
-      text-align: center;
-    }
+    
     .link{
       text-align: left;
+      position: relative;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      
     }
+
+
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.contact-section {
+    text-align: center;
+  
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-section p {
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border: none;
+}
+ b{
+  color: brown;
+ }
   </style>
 
 </head>
@@ -104,8 +157,8 @@
   </header>
 
   <section>
-    <h2>XCar Shop</h2>
-    <p>Have a question? whatever you need, we're here to help.
+    <h2>Xcar Shop</h2>
+    
     </p>
     <div class="topnav">
       <i class="fa-solid fa-magnifying-glass"></i>
@@ -113,54 +166,88 @@
     </div>
   </section>
 
+ <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a question or inquiry? Get in touch with us!</p>
+            <form id="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-
+        
+    
 
   <footer>
-    <div class="link">
+
+      <main>
+        <div>
+          <dl>
+            <h3>
+              <b>Services</b>
+            </h3>
+            <i class="fa-solid fa-truck"></i>
+            <i>Delivery</i><br>
+            <i class="fa-solid fa-car"></i>
+            <i>Latest cars</i><br>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i>Pre-order now</i>
+          </dl>
+        </div>
+
+
+        <div>
+          <dl>
+            <h3>
+              <b>Information</b>
+            </h3>
+            <i class="fa-solid fa-newspaper"></i>
+            <i>Latest news</i><br>
+            <i class="fa-solid fa-lock"></i>
+            <i>Privacy policy</i><br>
+            <i class="fa-solid fa-star"></i>
+            <i>Terms of services</i>
+          </dl>
+        </div>
+
+        <div>
+          <dl>
+            <h3>
+              <b>Address</b>
+            </h3>
+            <i class="fa-solid fa-location-dot"></i>
+            <i>Itahari - Nepal</i><br>
+            <i class="fa-solid fa-phone"></i>
+            <i>+977 9846837536</i><br>
+            <i class="fa-solid fa-at"></i>
+            <i>info@xcarshop.com</i>
+          </dl>
+        </div>
+
+      </main>
+          <div class="link">
       <i class="fa fa-twitter"></i>
       <i class="fa fa-facebook"></i>
       <i class="fa fa-instagram"></i>
       <i class="fa fa-linkedin"></i>
     </div>
-    <div class="">
-      <!-- Remaining here -->
-      <main>
-        <div>
-          <dl>
-            <dt>
-              <h3>Services</h3>
-            </dt>
-            <dt>Delivery</dt>
-            <dt>Latest cars</dt>
-            <dt>Pre-order now</dt>
-          </dl>
-        </div>
-
-
-        <div>
-          <dl>
-            <h3>
-              <dt>Information</dt>
-            </h3>
-            <dt>Latest news</dt>
-            <dt>Privacy policy</dt>
-            <dt>Terms of services</dt>
-          </dl>
-        </div>
-
-        <div>
-          <dl>
-            <h3>
-              <dt>Address</dt>
-            </h3>
-            <i class="fa-solid fa-location-dot"></i>
-            <i>Itahari - Nepal</i>
-            <dt>+977 9846837533</dt>
-            <dt>info@xcarshop.com</dt>
-          </dl>
-        </div>
-      </main>
       <div class="end">
         <p>&copy; 2023 Car Shop. All rights reserved.</p>
       </div>
