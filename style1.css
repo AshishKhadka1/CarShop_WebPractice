@@ -73,6 +73,11 @@ main {
 h2 {
   margin-bottom: 1px;
   padding-left: 20px;
+  
+}
+p{
+  padding-left: 20px;
+  text-decoration: solid;
 }
 
 .cpa {

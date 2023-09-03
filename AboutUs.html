@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <style>
         h1 {
-            text-align: center;
+            /* text-align: inherit; */
+            color: #89687D;
+            margin-top: 20px;
+            padding-top:50px;
         }
 
         nav ul {
@@ -27,16 +30,26 @@
         /* About section styles */
         .about-section {
             text-align: center;
-            padding: 100px 0;
-            background-color: #f8f8f8;
-           
+            padding: 120px 0;
+            background-image: url(1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+
         }
 
         /* Features section styles */
+        h5{
+            font-size: 15px;
+            padding-left: 80px;
+           
+
+        }
         .features-section {
-            background-color: #fff;
             padding: 40px 0;
             text-align: center;
+            
         }
 
         .features-list {
@@ -48,8 +61,8 @@
 
         /* Call to action styles */
         .call-to-action {
-            background-color: #f8f8f8;
-            padding: 20px 0;
+            background-color: #FFF7EC;
+            padding: 15px 0;
             text-align: center;
         }
 
@@ -67,6 +80,14 @@
             background-color: #555;
         }
 
+        h4{
+                padding-left: 90px;
+
+        }
+        small{
+            padding-left: 80px;
+
+        }
         .testimonials {
             padding: 40px 0;
             text-align: center;
@@ -88,8 +109,8 @@
             flex-basis: 28%;
             padding: 10px;
             margin-bottom: 30px;
-            border-radius: 5px;
-            box-shadow: 0 10px 3px #533f32;
+            border-radius: 3px;
+            box-shadow: 0 10px 3px #a98b77;
             cursor: pointer;
             transition: transform .5s;
         }
@@ -106,19 +127,10 @@
         }
 
         .user img {
-            width: 40px;
-            margin-right: 20px;
             border-radius: 3px;
-        }
+            padding-left: 90px;
+         
 
-        .user-info .fa {
-            margin-left: 10px;
-            color: #27c0ff;
-            font-size: 20px;
-        }
-
-        .user-info smalll {
-            color: #009688;
         }
 
         .testinomial-col:hover {
@@ -148,42 +160,73 @@
 
     <section class="about-section">
         <div class="container">
-       
-            <h1>Welcome to Car Emporium</h1>
-            <p>Your Destination for Luxury Automobiles</p>
+
+
+            <h1></h1>
+            <!-- <p>Your Destination for Luxury Automobiles</p> -->
         </div>
     </section>
 
     <section class="features-section">
         <div class="container">
             <h2>Why Choose Us?</h2>
-            <ul class="features-list">
-                <li>Curated Selection of High-End Vehicles</li>
-                <li>Expert and Friendly Staff</li>
-                <li>Personalized Vehicle Consultation</li>
-                <li>Flexible Financing Options</li>
-                <li>Outstanding Customer Service</li>
-                <li>Exclusive Limited Edition Models</li>
-            </ul>
-        </div>
+  
+            <div class="testinomial-row">
+                <div class="testinomial-col">
+                    <div class="user">
+
+                        <div class="user-info">
+                            <img src="https://consumer.tcimg.net/assets/_next/static/images/transparent-pricing-4d7899553551b3a2db95d346ac20062f.svg">
+                            <h5>Transparent pricing</h5>
+
+                        </div>
+                    </div>
+                    <p>No surprises here. See how much you'll pay on cars you like.</p>
+                </div>
+                <div class="testinomial-col">
+                    <div class="user">
+
+                        <div class="user-info">
+                            <img src="https://consumer.tcimg.net/assets/_next/static/images/minutes-not-hours-48afd64860a3e72b36d5986738c77eb4.svg">
+                            <h5>Minutes, not hours</h5>
+
+                        </div>
+                    </div>
+                    <p>Time saving tools to help you find the right car in a snap.</p>
+                </div>
+                <div class="testinomial-col">
+                    <div class="user">
+
+                        <div class="user-info">
+                            <img
+                                src="https://consumer.tcimg.net/assets/_next/static/images/shop-your-way-f575579b12ccf6daf39539dab242c0e2.svg">
+                            <h5>Shop your way</h5>
+
+                        </div>
+                    </div>
+                    <p>Your own pace, your own space. Shop online where and when it's convenient for you.</p>
+                </div>
     </section>
+    </div>
+
+
 
     <section class="call-to-action">
         <div class="container">
-            <h3>Ready to Experience Luxury?</h3>
+            <h3>Ready to Experience Luxury ?</h3>
             <a href="contact.html" class="btn">Contact Us</a>
         </div>
     </section>
 
     <section class="testimonials">
         <div class="container">
-            <h2>What Our Clients Say</h2>
+            <h2>What Our Client's Say ?</h2>
             <div class="testinomial-row">
                 <div class="testinomial-col">
                     <div class="user">
-                       
+
                         <div class="user-info">
-                            <h4>Rakesh Niroula</i></h4>
+                            <h4>Rakesh Niroula</h4>
                             <small>@rakeshniroula</small>
                         </div>
                     </div>
@@ -193,7 +236,7 @@
                 </div>
                 <div class="testinomial-col">
                     <div class="user">
-                       
+
                         <div class="user-info">
                             <h4>Prasanga Pokhrel</h4>
                             <small>@prasangapokhrel</small>
@@ -205,9 +248,9 @@
                 </div>
                 <div class="testinomial-col">
                     <div class="user">
-            
+
                         <div class="user-info">
-                            <h4>kshitizNiroula<i class="fa fa-twitter"></i></h4>
+                            <h4>kshitiz Niroula</h4>
                             <small>@kshitizniroula</small>
                         </div>
                     </div>
